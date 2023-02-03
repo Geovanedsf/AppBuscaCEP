@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCep"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="64dp"
+        android:hint="CEP"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextBairro"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="144dp"
+        android:hint="Bairro"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCep" />
+
+    <EditText
+        android:id="@+id/editTextComplemento"
+        android:layout_width="170dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:hint="Complemento"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogradouro" />
+
+    <EditText
+        android:id="@+id/editTextNumero"
+        android:layout_width="163dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:hint="Número"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/editTextComplemento"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogradouro" />
+
+    <EditText
+        android:id="@+id/editTextLogradouro"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:hint="Endereço"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCep" />
+
+    <EditText
+        android:id="@+id/editTextCidade"
+        android:layout_width="211dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="84dp"
+        android:hint="Cidade"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/editTextEstado"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumero"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumero" />
+
+    <EditText
+        android:id="@+id/editTextEstado"
+        android:layout_width="129dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="84dp"
+        android:hint="Estado"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="@+id/editTextComplemento"
+        app:layout_constraintTop_toBottomOf="@+id/editTextComplemento" />
+
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Pesquisar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEstado"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/editTextCidade"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCidade"
+        app:layout_constraintVertical_bias="0.048" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
